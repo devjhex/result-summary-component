@@ -1,0 +1,177 @@
+/* Colors */
+/* Gradients */
+/* Neutral Colors */
+@font-face {
+  font-family: font;
+  src: url(/assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: font;
+}
+
+.result {
+  background-color: hsl(0, 0%, 100%);
+}
+.result .result__percent {
+  color: hsl(221, 100%, 96%);
+  height: -moz-max-content;
+  height: max-content;
+  text-align: center;
+  background-image: linear-gradient(to top, hsla(241, 81%, 54%, 0.941) 30%, hsla(252, 91%, 57%, 0.875));
+  border-radius: 0px 0px 2rem 2rem;
+}
+.result .result__percent h1, .result .result__percent h2 {
+  padding-top: 1.5rem;
+}
+.result .result__percent .percent {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 140px;
+  height: 140px;
+  margin-inline: auto;
+  background-image: linear-gradient(to bottom, hsla(252, 67%, 41%, 0.804) 10%, hsla(241, 87%, 60%, 0.879) 95%, hsla(252, 71%, 43%, 0.1));
+  border-radius: 50%;
+}
+.result .result__percent .percent .mark {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+}
+.result .result__percent .percent span:last-child {
+  color: hsla(222, 100%, 96%, 0.531);
+}
+.result .result__percent .result__percent_text {
+  width: 67%;
+  margin-top: 0.8rem;
+  margin-inline: auto;
+  padding-bottom: 3rem;
+  line-height: 1.3;
+  color: hsla(222, 100%, 96%, 0.8);
+}
+.result .result__summary {
+  width: 85%;
+  margin-top: 1.5rem;
+  margin-inline: auto;
+}
+.result .result__summary_title {
+  color: hsl(241, 72%, 16%);
+  margin-bottom: 1.4rem;
+}
+.result .result__summary .sector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  padding: 1rem;
+  margin-bottom: 0.8rem;
+  border-radius: 0.5rem;
+  background-color: darkgray;
+}
+.result .result__summary .sector .react {
+  display: flex;
+  font-weight: 500;
+}
+.result .result__summary .sector .react img {
+  margin-right: 0.5rem;
+}
+.result .result__summary .sector .fraction {
+  color: hsla(222, 30%, 29%, 0.649);
+}
+.result .result__summary .sector .numerator {
+  color: hsl(241, 72%, 16%);
+  font-weight: 700;
+}
+.result .result__summary .reaction {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+.result .result__summary .reaction .react {
+  color: hsl(0, 100%, 67%);
+}
+.result .result__summary .memory {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+.result .result__summary .memory .react {
+  color: hsl(39, 100%, 56%);
+}
+.result .result__summary .verbal {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+.result .result__summary .verbal .react {
+  color: hsl(166, 100%, 37%);
+}
+.result .result__summary .visual {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+.result .result__summary .visual .react {
+  color: hsl(234, 85%, 45%);
+}
+.result button {
+  all: unset;
+  width: 100%;
+  height: 3.5rem;
+  display: block;
+  background-color: red;
+  margin-top: 1.2rem;
+  margin-inline: auto;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  background-color: hsl(222, 30%, 29%);
+  border-radius: 2rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+@media (min-width: 750px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: hsl(221, 100%, 96%);
+  }
+  .result {
+    max-width: 77%;
+    max-height: 82%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.6rem;
+  }
+  .result .result__percent {
+    height: 100%;
+    max-width: 48%;
+    border-radius: 1.6rem;
+  }
+  .result .result__percent .percent {
+    width: 170px;
+    height: 170px;
+  }
+  .result .result__summary {
+    width: 260px;
+    margin-top: -0.2rem;
+  }
+  .result .result__summary_title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .result button {
+    height: 3rem;
+    margin-top: 2rem;
+  }
+}/*# sourceMappingURL=style.css.map */
